@@ -1,0 +1,142 @@
+@charset "utf-8";
+	*{
+		padding: 0;
+		margin: 0;
+		font-family: arial;
+		font-size: normal;
+	}
+	ul{	
+		list-style:none;
+	}
+	.nav ul li{
+		display: inline-block;
+	}
+	a{
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	.logo{
+		padding-top: 10px;
+		width:170px;
+		position: absolute;
+		left: 20%;
+		z-index: 1;
+	}
+	/*导航栏定位*/
+	.nav{ 
+		position: fixed;/*absolute：
+							1.脱离原来位置进行定位
+							2.相对于最近的有定位的父级进行定位，如果没有，相对于文档进行定位
+							relative：
+							1.保留原来位置进行定位
+							2.相对于自己原来的位置进行定位
+							fixed:
+							和absolute差不多，但是可以随滚动条一直不动*/
+		top:0;
+		padding:0 0 0 10%;
+		text-align: center;
+		background-color: rgb(53,96,128);
+		width: 100%;
+		height: 75px;
+		opacity: 0.95;/*透明度*/
+		z-index: 999;
+		}
+	.nav::after{/*利用伪元素消除浮动流*/
+		content: "";
+		display: block;
+		clear: both;
+	} 
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+	/*下拉栏内容*/
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    width: 140px;
+	    top:75px;
+	    left: 20px;
+	    line-height: 30px;
+	    text-align: center;
+	    background-color: rgb(53,96,128);
+	    padding: 0px 10px 0px 20px;
+	    z-index: 1;
+	}
+	.dropdown ul li{
+		display: block;
+	}
+	.dropdown:hover .dropdown-content{
+	    display: block;
+	}
+
+	.nav .dropdown span {	
+		display: inline-block;
+		height: 50px;
+		width: 100px;	
+		color:#fff;	
+		text-align: center;
+		line-height: 50px;
+	    display: block;
+	    margin: 0px 20px 0;
+	    padding:20px 30px 5px 40px;
+	}
+	.nav .dropdown span:hover{
+		background-color:#fff;
+		color:  rgb(53,96,128);
+	}
+	.Container{
+		margin-top: 75px;
+		padding: 0 32%;
+		height: 500px;
+	}
+	.title{
+		display: inline-block;
+		margin: 20px 0;
+		font-weight: normal;
+		color:rgb(53,96,128);
+	}
+	
+	/*底部导航栏容器*/
+	.footerWrapper{
+		background-color: rgb(53,96,128);
+		height: 300px;
+		width:100%;
+		padding-top: 45px;
+	}
+	.sitemap{
+		color: #fff;
+		height: 230px;
+		padding:0 20% 0 30%;
+		position: relative;
+	}
+	.sitemap div{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 12px;
+		width: 180px;
+		height: 230px;
+	}
+	.sitemap div span{
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	.sitemap div li{
+		line-height: 25px;
+	}
+	.copyright{
+		border-top: 1px solid #fff;
+		position: relative;
+		bottom:-15px ;
+		height: 20px;
+		width: 60%;
+		margin-left: 20%;
+		padding-top: 15px;
+		
+		font-size: 12px;
+	}
+	.separator{
+		margin: 0 2px;
+		color: #fff;
+	}

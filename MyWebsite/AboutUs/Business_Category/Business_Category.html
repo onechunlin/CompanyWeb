@@ -1,0 +1,175 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+	嘉腾科技
+	</title>
+	<link rel="stylesheet" type="text/css" href="Business_Category.css">
+	<script>
+		function isHidden(oDiv){
+		  var id=oDiv.slice(0,2);
+		  var vDiv = document.getElementById(oDiv);
+	      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+		  if(oDiv=="id1"){
+		  	var id2 = document.getElementById(id+2);
+	        var id3 = document.getElementById(id+3);
+	        id2.style.display='none';
+	        id3.style.display='none';
+		  }
+		  else if(oDiv=="id2"){
+	        var id1 = document.getElementById(id+1);
+	        var id3 = document.getElementById(id+3);
+	        id1.style.display='none';
+	        id3.style.display='none';
+		  }
+		  else{
+		  	var id1 = document.getElementById(id+1);
+	        var id2 = document.getElementById(id+2);
+	        id1.style.display='none';
+	        id2.style.display='none';
+		  }
+	      
+	    }
+	</script>
+</head>
+<body style="background-color: rgb(218,231,241);">
+
+<div class="nav">
+	<a href="../../Main/Main.html"><img src="../../Main/images/logo.png" class="logo";></a>
+	<ul>
+    	<li class="dropdown">
+    		<span>关于我们</span>
+        	<div class="dropdown-content">      		           	
+                <ul>
+                	<li><a href="../CompanyIntroduce/CompanyIntroduce.html" >公司简介</a></li>
+	            	<li><a href="#">业务范畴</a></li>
+	            	<li><a href="#">历史及里程碑</a></li>
+	            	<li><a href="#">领导团队</a></li>
+	            	<li><a href="../Commen_problem/Commen_problem.html">常见问题</a></li>
+				</ul>		
+			</div>
+		</li>
+		<li class="dropdown">
+			<span>产品展示</span>
+			<div class="dropdown-content">      		           	
+                <ul >
+                	<li><a href="#" >手机</a></li>
+	            	<li><a href="#">电脑</a></li>
+	            	<li><a href="#">新能源科技</a></li>
+				</ul>		
+			</div>
+		</li>
+		<li class="dropdown">
+			<span>投资者关系</span>
+			<div class="dropdown-content">      		           	
+                <ul >
+                	<li><a href="#" >投资者关系主页</a></li>
+	            	<li><a href="#">投资者新闻及活动</a></li>
+	            	<li><a href="#">投资者日</a></li>
+	            	<li><a href="#">季度业绩</a></li>
+				</ul>		
+			</div>
+		</li>
+		<li class="dropdown">
+			<span>联系我们</span>
+			<div class="dropdown-content">      		           	
+                <ul >
+                	<li><a href="#">办公地点</a></li>
+	            	<li><a href="../../ContactUs/Investor_contact.html">投资者联系</a></li>
+	            	<li><a href="#">媒体联系</a></li>
+	            	<li><a href="#">客户联系</a></li>
+				</ul>		
+			</div>
+		</li>		
+	</ul>
+</div>
+<div class="Container">
+	<div style="margin-left: 290px;">
+		<h2 class="title">业务介绍</h2>
+		<video style="height: 400px;display: block;"controls="" poster="https://docs.alibabagroup.com/assets2/images/en/news/video_clip51_l.png" controlslist="nodownload" onclick="this.paused ? this.play() : this.pause();">
+			<source src="https://view.vzaar.com/18340395/video">
+		</video>
+	</div>
+	<div style="margin-left: 290px;">
+		<h2 class="title">业务范畴</h2>
+	</div>
+	<div style="margin-left: 290px;">
+		<div class="div" onclick="isHidden('id1')">
+			<img src="images//手机.png" alt="手机" style="width: 250px;">		
+		</div>
+		<div id="id1" class="content" style="display: none;">
+				<p>详情请访问我们的网站（<a href="#">www.phone.com</a>）</p>
+		</div>
+
+		<div class="div" onclick="isHidden('id2')">
+			<img src="images//电脑.png" alt="电脑" style="width: 250px;">		
+		</div>
+		<div id="id2" class="content" style="display: none;">
+				<p>详情请访问我们的网站（<a href="#">www.computer.com</a>）</p>
+		</div>
+		
+		<div class="div" onclick="isHidden('id3')">
+			<img src="images//新能源科技.png" alt="新能源科技" style="width: 250px;">		
+		</div>
+		<div id="id3" class="content" style="display: none;">
+				<p>详情请访问我们的网站（<a href="#">www.technology.com</a>）</p>
+		</div>
+	</div>
+		
+</div>
+	
+<div class="footerWrapper">
+	<div class="sitemap">
+		<div>
+			<span><strong>关于我们</strong></span>     		           	
+                <ul >
+                	<li><a href="../CompanyIntroduce/CompanyIntroduce.html" >公司简介</a></li>
+	            	<li><a href="#">业务范畴</a></li>
+	            	<li><a href="#">历史及里程碑</a></li>
+	            	<li><a href="#">领导团队</a></li>
+	            	<li><a href="../Commen_problem/Commen_problem.html">常见问题</a></li>
+				</ul>		
+		</div>
+		<div>
+			<span><strong>产品展示</strong></span>   		           	
+            <ul >
+            	<li><a href="#" >手机</a></li>
+            	<li><a href="#">电脑</a></li>
+            	<li><a href="#">新能源科技</a></li>
+			</ul>		
+		</div>
+		<div>
+			<span><strong>投资者关系</strong></span>			      		           	
+            <ul >
+            	<li><a href="#" >投资者关系主页</a></li>
+            	<li><a href="#">投资者新闻及活动</a></li>
+            	<li><a href="#">投资者日</a></li>
+            	<li><a href="#">季度业绩</a></li>
+			</ul>				
+		</div>
+		<div>
+			<span><strong>联系我们</strong></span>      		           	
+            <ul >
+            	<li><a href="#" >办公地点</a></li>
+            	<li><a href="../../ContactUs/Investor_contact.html">投资者联系</a></li>
+            	<li><a href="#">媒体联系</a></li>
+            	<li><a href="#">客户联系</a></li>
+			</ul>	
+		</div>
+	</div>
+	<div class="copyright">
+		<a href="#" style="margin-left: 15%;">加入我们</a>
+		<span class="separator">|</span>
+		<a href="#">免责声明</a>
+		<span class="separator">|</span>
+		<a href="#">隐私政策</a>
+		<span class="separator">|</span>
+		<span style="color: #fff">
+			版权公告 © 1999-2018 嘉腾科技有限公司及／或其关联公司及特许人。版权所有。
+		</span>
+	</div>
+</div>
+
+</body>
+</html>
